@@ -10,3 +10,7 @@ Solutions are in located in `src/routes/[day]`.
 ```bash
 npm i && npm run dev
 ```
+
+## Browse the answers
+
+The project is deployed to github pages: https://oskery.github.io/aoc-23/
