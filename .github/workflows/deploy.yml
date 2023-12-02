@@ -23,6 +23,7 @@ jobs:
       - name: build
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
+          SESSION_TOKEN: ${{ secrets.SESSION_TOKEN }}
         run: |
           npm run build
 
