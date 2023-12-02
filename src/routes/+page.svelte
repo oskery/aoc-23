@@ -7,7 +7,7 @@
 		<li>
 			<a
 				class="hover:shadow text-3xl font-semibold transition rounded aspect-square flex border border-gray-400 items-center justify-center"
-				href={`/${day}`}
+				href={`./${day}`}
 			>
 				{day}
 			</a>
