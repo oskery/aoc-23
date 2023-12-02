@@ -6,7 +6,7 @@
 	{#each days as day}
 		<li>
 			<a
-				class="hover:shadow text-3xl font-semibold transition rounded aspect-square flex border border-gray-400 items-center justify-center"
+				class="hover:shadow text-3xl font-semibold transition rounded aspect-square flex border border-gray-500/50 hover:border-gray-500 items-center justify-center"
 				href={`./${day}`}
 			>
 				{day}
