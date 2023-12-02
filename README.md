@@ -13,4 +13,4 @@ npm i && npm run dev
 
 ## Browse the answers
 
-The project is deployed to github pages: https://oskery.github.io/aoc-23/
+The project is deployed to vercel: https://aoc-23.vercel.app/
