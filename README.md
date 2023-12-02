@@ -1,7 +1,12 @@
 # Advent of code 2023 ☃️
 
-Solutions are in located in `src/routes/[day]`. To run the code locally:
+Solutions are in located in `src/routes/[day]`.
 
+## Setup & usage
+
+1. Add an .env-file and a variable SESSION_TOKEN. You'll find your token in the HTTP request to advent of code website.
+
+2. Run the sveltekit app:
 ```bash
 npm i && npm run dev
 ```
