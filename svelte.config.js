@@ -4,6 +4,9 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
+		prerender: {
+			handleHttpError: "ignore"
+		},
 		adapter: adapter({
 			fallback: '404.html'
 		}),
