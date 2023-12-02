@@ -6,7 +6,7 @@
 </script>
 
 <header>
-	<a href="/" class="text-2xl font-bold">
+	<a href="./" class="text-2xl font-bold">
 		<h1>Advent of Code 2023</h1>
 	</a>
 </header>
