@@ -6,7 +6,20 @@
 
 	// Part 1
 	const [fst, ...rest] = data.input?.trim().split('\n');
-	let seeds = fst.split(': ')[1].split(' ').map(Number);
+	let initialSeeds = fst.split(': ')[1].split(' ').map(Number);
+	let seeds = [...initialSeeds];
+
+	const seeds2: number[] = [];
+	console.log(data.input);
+	initialSeeds.forEach((seed: number, i: number) => {
+		if (i % 2 !== 0) return;
+		let j = initialSeeds[i + 1];
+		// while (j-- > 0) {
+		// 	seeds2.push(j);
+		// }
+	});
+
+	// Given array of seeds, e.g: 79 14 55 13. Create an array of numbers from 79-92 and 55-68
 
 	// Use Object.groupBy if not sveltekit
 	const groups = rest.reduce((acc, line) => {
@@ -29,14 +42,13 @@
 	});
 
 	callbacks.forEach((cb) => {
-		seeds.forEach((seed: number, i: number) => {
-			seeds[i] = cb(seed);
-		});
+		seeds.forEach((seed: number, i: number) => (seeds[i] = cb(seed)));
+		// seeds2.forEach((seed: number, i: number) => (seeds2[i] = cb(seed)));
 	});
 </script>
 
 Part 1: {Math.min(...seeds)}
 
 <br />
-Part 2:
+Part 2: {Math.min(...seeds2)}
 <br />
